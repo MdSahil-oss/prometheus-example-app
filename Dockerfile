@@ -1,5 +1,6 @@
-FROM quay.io/prometheus/busybox:latest
-
-ADD prometheus-example-app /bin/prometheus-example-app
-
-ENTRYPOINT ["/bin/prometheus-example-app"]
+FROM golang:alpine
+WORKDIR /app
+COPY . .
+RUN go get
+CMD ["go", "run", "./main.go"]
+EXPOSE 8080

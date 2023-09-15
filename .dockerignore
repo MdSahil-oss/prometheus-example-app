@@ -1,0 +1,6 @@
+./manifests
+./vendor
+Dockerfile
+LICENSE
+README.md
+VERSION
