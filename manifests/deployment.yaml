@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: prometheus-example-app
-        image: quay.io/brancz/prometheus-example-app:v0.3.0
+        image: mdsahiloss/prometheus-example-app:latest
         ports:
         - name: web
           containerPort: 8080
